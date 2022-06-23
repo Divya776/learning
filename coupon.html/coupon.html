@@ -1,0 +1,99 @@
+<button id="plus">
+    +
+</button>
+<button id="minus">
+    -
+</button>
+<p id="foo">  </p>
+
+<script>
+    "use strict"
+var data = 0
+const output = document.querySelector('#foo')
+output.innerHTML = data;
+const add = document.querySelector('#plus')
+
+// add.addEventListener('click',()=>{
+//     data = data + 1;
+    
+//     validate(data)
+//     output.innerHTML = data;
+
+// })
+// const minus = document.querySelector('#minus')
+// minus.addEventListener('click',()=>{
+//     data = data - 1;
+    
+//     validate(data)
+//    output.innerHTML = data;
+   
+// })
+
+// function validate(number){
+//    if(number==10){
+//        alert("Foo")
+//        output.innerHTML = "Are you an idiot"
+//    }
+// }
+add.addEventListener('click',()=>{
+    
+    
+   if (data < 10)
+   {
+    data = data + 1;
+// console.log("it should be less than 10");
+   }
+  else 
+  {
+      alert("stupid number is not allowed")
+  }
+    output.innerHTML = data;
+
+})
+const minus = document.querySelector('#minus')
+minus.addEventListener('click',()=>{
+    if(data > 0)
+    {
+    data = data - 1;
+    }
+    else 
+  {
+      alert("stupid number is not allowed")
+  }
+   output.innerHTML = data;
+   
+})
+
+// function validate(number){
+//    if(number==10){
+//        alert("Foo")
+//        output.innerHTML = "Are you an idiot"
+//    }
+// }
+
+// function validate(number){
+// if(number < 0 && number > 100){
+// alert ("Number cannot be defined as less than 0 or greater than 100")
+// output.innerHTML = number;
+// }}
+
+// function getmessage (){
+// return ("hi hi hi");
+// }
+// function sayhello(){
+//     return getmessage()
+
+// }
+// sayhello();
+
+
+// sayhello();
+// function sayhello(){
+//     console.log("hell0");
+
+// }
+
+
+
+
+</script>
